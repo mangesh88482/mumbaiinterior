@@ -1,0 +1,99 @@
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+
+RewriteEngine On 
+RewriteCond %{HTTPS_USER_AGENT} ^BlackWidow [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Bot\ mailto:craftbot@yahoo.com [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^ChinaClaw [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Custo [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^DISCo [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Download\ Demon [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^eCatch [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^EirGrabber [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^EmailSiphon [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^EmailWolf [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Express\ WebPictures [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^ExtractorPro [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^EyeNetIE [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^FlashGet [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^GetRight [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^GetWeb! [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Go!Zilla [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Go-Ahead-Got-It [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^GrabNet [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Grafula [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^HMView [OR]
+RewriteCond %{HTTPS_USER_AGENT} HTTrack [NC,OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Image\ Stripper [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Image\ Sucker [OR]
+RewriteCond %{HTTPS_USER_AGENT} Indy\ Library [NC,OR]
+RewriteCond %{HTTPS_USER_AGENT} ^InterGET [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Internet\ Ninja [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^JetCar [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^JOC\ Web\ Spider [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^larbin [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^LeechFTP [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Mass\ Downloader [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^MIDown\ tool [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Mister\ PiX [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Navroad [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^NearSite [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^NetAnts [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^NetSpider [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Net\ Vampire [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^NetZIP [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Octopus [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Offline\ Explorer [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Offline\ Navigator [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^PageGrabber [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Papa\ Foto [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^pavuk [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^pcBrowser [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^RealDownload [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^ReGet [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^SiteSnagger [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^SmartDownload [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^SuperBot [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^SuperHTTPS [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Surfbot [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^tAkeOut [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Teleport\ Pro [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^VoidEYE [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Web\ Sucker [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WebAuto [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WebCopier [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WebFetch [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WebGo\ IS [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WebLeacher [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WebReaper [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WebSauger [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Website\ eXtractor [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Website\ Quester [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WebStripper [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WebWhacker [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WebZIP [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Wget [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Widow [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^WWWOFFLE [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Xaldon\ WebSpider [OR]
+RewriteCond %{HTTPS_USER_AGENT} ^Zeus
+RewriteRule ^.* - [F,L]
+
+
+DirectoryIndex index.php
+
+Options All -Indexes  
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+
+
+
